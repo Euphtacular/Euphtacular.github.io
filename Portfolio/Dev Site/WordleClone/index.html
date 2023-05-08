@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang=eng>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Word Masters</title>
+        <link type="text/css" rel="stylesheet" href="./style.css" />
+    </head>
+
+    <nav class="header">
+        <h1 class="title winner">Word Masters</h1>
+    </nav>
+    <body class="board">
+        <div class="info-bar hidden">
+            <div class="spiral">🍤</div>
+        </div>
+        <div class="first-word line">
+            <input type="text" class="letter-box" id="letter-one-one" onkeydown="nextLetter(this, 'letter-one-two')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-one-two" onkeydown="nextLetter(this, 'letter-one-three')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-one-three" onkeydown="nextLetter(this, 'letter-one-four')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-one-four" onkeydown="nextLetter(this, 'letter-one-five')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-one-five" maxlength="1" />
+        </div>
+        <div class="second-word line">
+            <input type="text" class="letter-box" id="letter-two-one" onkeydown="nextLetter(this, 'letter-two-two')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-two-two" onkeydown="nextLetter(this, 'letter-two-three')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-two-three" onkeydown="nextLetter(this, 'letter-two-four')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-two-four" onkeydown="nextLetter(this, 'letter-two-five')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-two-five" maxlength="1" />
+        </div>
+        <div class="third-word line">
+            <input type="text" class="letter-box" id="letter-thre-one" onkeydown="nextLetter(this, 'letter-three-two')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-three-two" onkeydown="nextLetter(this, 'letter-three-three')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-three-three" onkeydown="nextLetter(this, 'letter-three-four')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-three-four" onkeydown="nextLetter(this, 'letter-three-five')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-three-five" maxlength="1" />
+        </div>
+        <div class="fourth-word line">
+            <input type="text" class="letter-box" id="letter-four-one" onkeydown="nextLetter(this, 'letter-four-two')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-four-two" onkeydown="nextLetter(this, 'letter-four-three')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-four-three" onkeydown="nextLetter(this, 'letter-four-four')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-four-four" onkeydown="nextLetter(this, 'letter-four-five')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-four-five" maxlength="1" />
+        </div>
+        <div class="fifth-word line">
+            <input type="text" class="letter-box" id="letter-five-one" onkeydown="nextLetter(this, 'letter-five-two')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-five-two" onkeydown="nextLetter(this, 'letter-five-three')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-five-three" onkeydown="nextLetter(this, 'letter-five-four')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-five-four" onkeydown="nextLetter(this, 'letter-five-five')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-five-five" maxlength="1" />
+        </div>
+        <div class="sixth-word line">
+            <input type="text" class="letter-box" id="letter-six-one" onkeydown="nextLetter(this, 'letter-six-two')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-six-two" onkeydown="nextLetter(this, 'letter-six-three')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-six-three" onkeydown="nextLetter(this, 'letter-six-four')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-six-four" onkeydown="nextLetter(this, 'letter-six-five')" maxlength="1" />
+            <input type="text" class="letter-box" id="letter-six-five" maxlength="1" />
+        </div>
+        <script src="./wordmasters.js"></script>
+    </body>
+</html>

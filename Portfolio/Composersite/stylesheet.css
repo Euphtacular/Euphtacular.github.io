@@ -1,0 +1,84 @@
+:root {
+    --blue: #0477BF;
+    --teal: #7AB3BF;
+    --orange: #D97A07;
+    --red: #D90404;
+    --maroon: #590202;
+    --white: #c1c1c1; 
+    --black: #131313; 
+    --grey: #a0a0a0; 
+    --font-size: 1.3rem;
+    --jost: "Jost", monospace;
+    --light: "Overpass", sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.section-blue {
+    background-color: var(--blue);
+}
+
+.section-maroon {
+    background-color: var(--maroon);
+}
+
+body {
+    background-color: var(--teal);
+    color: var(--black);
+    font-family: var(--jost);
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    color: var(--white);
+    font-family: var(--light);
+    margin: 0 auto;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navlink {
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+}
+
+nav a:hover {
+    color: var(--grey);
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+#features {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-work {
+    padding-left: 100px;
+    padding-bottom: 2rem;
+}
